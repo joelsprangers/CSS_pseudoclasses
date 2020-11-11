@@ -1,0 +1,112 @@
+
+main{
+    padding:0;
+    margin:0;
+    font-family: Poppins, Geneva, Tahoma, sans-serif; 
+    font-size: 20px;
+    margin: 5px;
+    min-width: 620px;
+    max-width: 700px;
+}
+
+.link-page { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(33,33,33);
+    margin-top: 40px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(55, 51, 94);
+    font-size: 25px;
+    height: 60px;
+}
+
+a{
+    text-decoration: unset;
+    color: rgb(246, 246, 246);  
+    padding: 10px;
+    
+}
+
+.link-page a[href*="google"]{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.link-page a[href*="google"]:hover{
+    font-weight: bolder;
+    color: rgb(92,175,245);
+}
+
+.link-page a[href*="youtube"]{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.link-page a[href*="youtube"]:active{
+    font-style: italic;
+    color: rgb(250,129,76);
+}
+
+.link-page a[href*="snapchat"]{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.link-page a[href*="snapchat"]:visited{
+    color: rgb(224,246,119);
+}
+
+textarea{
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    border: unset;
+    background-color: rgb(48, 47, 47);
+    padding: 20px;
+    outline-style: unset;
+}
+
+textarea:focus{
+    font-size: 1em;
+    color:#d5eec3;
+}
+
+nav a{
+    color: rgb(246, 246, 246); 
+}
+
+nav a:hover{
+    background-color: rgb(202, 198, 238);
+}
+
+nav a:first-child{
+    padding: 0;
+}
+
+.search-input{
+    height: 75%;
+    border: unset;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: rgb(129, 128, 170);
+    outline-style: unset;
+}
+.search-input:focus{
+    border: solid 2px aliceblue;
+}
+
+.current-page{
+    background-color: rgb(129, 128, 170);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
